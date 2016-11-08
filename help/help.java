@@ -11,6 +11,7 @@ public class help
 			System.out.println("键入 ASSOC 而不带参数，显示当前文件关联。如果只用文件扩展");
 			System.out.println("名调用 ASSOC，则显示那个文件扩展名的当前文件关联。如果不为");
 			System.out.println("文件类型指定任何参数，命令会删除文件扩展名的关联。");
+			return;
 		}
 		else if(args.length == 1 && args[0].equals("ATTRIB"))
 		{
@@ -33,6 +34,7 @@ public class help
 			System.out.println("  /D  也处理文件夹。");
 			System.out.println("  /L  处理符号链接和");
 			System.out.println("      符号链接目标的属性");
+			return;
 		}
 	}
 }
