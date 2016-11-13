@@ -1,0 +1,16 @@
+public class CaiPiao 
+{
+	public static void main(String[] args) 
+	{
+		Random ra = new Random();
+		int a =ra.nextInt(10000);
+		if(a < 10)
+			System.out.println("恭喜你获得一等奖！");
+		else if(a >= 10 && a < 100)
+			System.out.println("恭喜你获得二等奖！");
+		else if(a >= 100 && a < 1000)
+			System.out.println("恭喜你获得三等奖！");
+		else
+			System.out.println("谢谢惠顾！");
+	}
+}
