@@ -9,7 +9,7 @@ public class ChaiFen
 		char[] ch = str.toCharArray();
 		char[] a = new char[10];
 		int x = 0;
-		int[] s = new int[10];
+		char[] s = new char[10];
 		int y = 0;
 		for(int i = 0; i<ch.length; i++)
 		{
@@ -28,7 +28,7 @@ public class ChaiFen
 		for(char temp : a)
 			System.out.print(temp+" ");
 		System.out.println();
-		for(int temp : s)
+		for(char temp : s)
 			System.out.print(temp+" ");
 		System.out.println();
 	}

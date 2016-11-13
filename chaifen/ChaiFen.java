@@ -13,7 +13,7 @@ public class ChaiFen
 		int y = 0;
 		for(int i = 0; i<ch.length; i++)
 		{
-			if(ch[i] >= 'a' && ch[i] <= 'z')
+			if(ch[i] >= 'a' && ch[i] <= 'z' || ch[i] >= 'A' && ch[i] <= 'Z')
 			{
 				a[x] = ch[i];
 				x++;
