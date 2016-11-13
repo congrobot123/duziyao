@@ -16,7 +16,7 @@ public class help
 		{
 			System.out.println("显示或更改文件属性。\n");
 			System.out.println("ATTRIB [+R | -R] [+A | -A ] [+S | -S] [+H | -H] [+I | -I]");
-			System.out.println("       [drive:][path][filename] [/S [/D] [/L]]");
+			System.out.println("       [drive:][path][filename] [/S [/D] [/L]]\n");
 			System.out.println("  +   设置属性。");
 			System.out.println("  -   清除属性。");
 			System.out.println("  R   只读文件属性。");
