@@ -1,4 +1,4 @@
-import java.util.Locale;   //Î´Íê³É£¡£¡
+import java.util.Locale;   
 import java.util.ResourceBundle;
 import java.text.MessageFormat;
 
@@ -10,10 +10,24 @@ public class GuoJiHua
 		if(args.length == 2)
 		{
 			String name = args[0];
-			nowLocale = new Locale(args[1]);
+		
+
+			if(args[1].equals("CN"))
+			{
+				nowLocale = new Locale("zh", "CN");
+			}
+			else if(args[1].equals("US"))
+			{
+				nowLocale = new Locale("en", "US");
+			}
+			else
+			{
+				System.out.println("enter error");
+			}
+		
+			ResourceBundle bundle = ResourceBundle.getBundle("mess", nowLocale);
+			String msg = bundle.getString("msg");
+			System.out.println(MessageFormat.format(msg , name));
 		}
-		ResourceBundle bundle = ResourceBundle.getBundle("mess",nowLocale);
-		String msg = bundle.getString("msg");
-		System.out.println(MessageFormat.format(msg , name));
 	}
 }
