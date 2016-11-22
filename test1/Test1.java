@@ -2,25 +2,23 @@ public class Test1
 {
 	public static void main(String[] args) 
 	{
-		int a = 1,n = 0;
+		int a = 4,flag = 0;
 		
-		for(int j=1; n != 3;a=++j)
+		for(int j=1; flag==4;++j)
 		{
-			a = a*5+1;
 			for(int i=0; i<4; i++)
 			{
 				if(a%4 == 0)
 				{
 					a = a/4*5+1;
-					n++;
+					flag++;
 				}
 				else 
 				{
-					n = 0;
+					flag = 0;
 					break;
 				}
-			}
-			
+			}			
 		}
 		System.out.println("原来至少有"+a+"个桃子");
 	}
