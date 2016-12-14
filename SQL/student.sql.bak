@@ -1,0 +1,22 @@
+drop database if exists student;
+create database student;
+use student;
+
+create table student_table
+(
+	name varchar(16) not null,
+	id int auto_increment primary key,
+	tel varchar(16) not null,
+	sex varchar(16) not null,
+	remark varchar(16)
+);
+
+insert into student_table value ('DuZiyao', 001, '123456789', 'male', null);
+insert into student_table value ('ZhouJunjie', null, '123456789', 'male', null);
+insert into student_table value ('XuXiaoxiong', null, '123456789', 'male', null);
+insert into student_table value ('XuChong', null, '123456789', 'male', null);
+insert into student_table value ('GengRui', null, '123456789', 'woman', null);
+insert into student_table value ('LiZhuxiang', null, '123456789', 'male', null);
+insert into student_table value ('XuXiaolei', null, '123456789', 'male', null);
+insert into student_table value ('LvChangxi', null, '123456789', 'male', null);
+insert into student_table value ('XueJie', null, '123456789', 'woman', null);
