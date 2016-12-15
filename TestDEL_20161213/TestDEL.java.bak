@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.io.File; 
+
+public class TestDEL 
+{
+	public static void main(String[] args) 
+	{
+		File file = new File(".");
+		Scanner sc = new Scanner(System.in);
+
+		String str = sc.next();
+		String filename = sc.next();
+		String str1 = file.getAbsolutePath();
+		str1 = str1.substring(0,str1.length()-1);
+		
+		String path = str1 + filename;
+
+		File file1 = new File(path);
+		if(str.equals("del") || str.equals("DEL"))
+		{
+			if(file1.exists())
+			{
+				file1.delete();
+			}
+			else
+			{
+				System.out.println("找不到 " + path);
+			}
+		}
+		else
+		{
+			System.out.println("'" + str + "' 不是内部或外部命令，也不是可运行的程序\n" +
+								"或批处理文件。");
+		}
+	}
+}
